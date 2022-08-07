@@ -1,3 +1,4 @@
+<div class="container-fluid"*ngFor="let persona of persona">
 <div class="row">
     <h1>Perfil</h1>
     <div class="col-lg-2">
@@ -8,12 +9,13 @@
 
     <div class="col lg 1"></div>
     <div class="col-lg-11">
-        <img src="{persona.imgP}" class="fotoPerfil">
         <table class="table">
+            <img img src={{persona.imgP}} class="img-fluid img-perfil" id="fotodeperfil">
             <tbody>
-                <tr *ngFor="let persona of persona">
+                <tr>
+                    
                     <td>
-                        <h2>{{persona.nombreP}}</h2>
+                        <h2>{{persona.apellidoP}}<br>{{persona.nombreP}}</h2>
                     </td>
                     <td>
                         <h3>{{persona.tituloP}}</h3>
@@ -31,3 +33,4 @@
             </tbody>
         </table>
     </div>
+</div>
