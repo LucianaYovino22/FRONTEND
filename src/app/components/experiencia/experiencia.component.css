@@ -7,18 +7,18 @@ div{
 
 h1 {
     display: inline;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Cinzel', serif;
    text-decoration-line: underline;
     
 } /*que ocupe el espacio de lo que está escrito, nada mas*/
 
 h2 {
     display: inline;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 30px;
 }
 p {
     display: inline;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 20px;
 }

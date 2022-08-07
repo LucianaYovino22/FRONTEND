@@ -1,3 +1,5 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <div class="container-fluid"*ngFor="let persona of persona">
 <div class="row">
     <h1>Perfil</h1>
@@ -13,14 +15,13 @@
             <img img src={{persona.imgP}} class="img-fluid img-perfil" id="fotodeperfil">
             <tbody>
                 <tr>
-                    
-                    <td>
+                    <td class="descripcion">
                         <h2>{{persona.apellidoP}}<br>{{persona.nombreP}}</h2>
                     </td>
-                    <td>
+                    <td class="descripcion">
                         <h3>{{persona.tituloP}}</h3>
                     </td>
-                    <td>{{persona.descP}}</td>
+                    <td class="descripcion">{{persona.descP}}</td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-outline-dark" routerLink="/edituser/{{persona.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>

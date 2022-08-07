@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<div class="container-fluid">
 <div class="row">
     <h1>Educación</h1>
     <div class="col-lg-2">
@@ -11,10 +14,10 @@
         <table class="table">
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
-                    <td>
+                    <td class="educacion">
                         <h2>{{Educacion.nombreE}}</h2>
                     </td>
-                    <td>{{Educacion.descripcionE}}</td>
+                    <td class="educacion">{{Educacion.descripcionE}}</td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-outline-dark" routerLink="/editedu/{{Educacion.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
@@ -27,3 +30,4 @@
             </tbody>
         </table>
     </div>
+</div>

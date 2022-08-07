@@ -15,15 +15,10 @@
 }
 h1 {
     display: inline;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Cinzel', serif;
     text-decoration-line: underline;
 }
-h2 {
+.proyecto,h2{
     display: inline;
-    font-family: 'Titillium Web', sans-serif;
-}
-p{
-   
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-family: 'Cinzel', serif;
 }

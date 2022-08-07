@@ -7,25 +7,13 @@ div{
 
 h1 {
     display: inline;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Cinzel', serif;
     text-decoration-line: underline;
 }
-h2 {
+.educacion, h2 {
    
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Cinzel', serif;
 } /*que ocupe el espacio de lo que está escrito, nada mas*/
 
-h3 {
-   
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 25px;
-}
 
-time {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 15px;
-}
-p{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
+

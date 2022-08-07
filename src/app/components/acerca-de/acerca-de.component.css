@@ -27,17 +27,21 @@ div {
         top:630px; 
 }
 }
-h1 {
-    display: inline;
-    font-family: 'Titillium Web', sans-serif;
+.descripcion, h1 {
+    font-family: 'Cinzel', serif;
+   
     
 }
 
 /** etiqueta Nombre**/
-#nombre {
+h2 {
  font-weight: bold;
  margin-top: 30%;
-
+ font-family: 'Cinzel', serif;
 }
 
+.table {
+    border-bottom:none;
+    border-collapse: inherit;
+}
 
