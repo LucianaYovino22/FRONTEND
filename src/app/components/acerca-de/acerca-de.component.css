@@ -40,4 +40,18 @@ h1 {
 
 }
 
+<<<<<<< Updated upstream
 
+=======
+@media(max-width: 768px) {
+    #fotodeperfil {
+        margin-top: -20%;
+    }
+}
+
+@media(max-width: 576px) {
+    #edit-persona-btn{
+        top: 48.5rem;
+        right: 2rem;
+    }
+}
