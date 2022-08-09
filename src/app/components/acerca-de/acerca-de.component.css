@@ -7,39 +7,20 @@ div {
     text-align: center;
 }
 /**Estilo de la foto de perfil**/
-@media (min-width:576px ) {
-    #fotodeperfil {
-    position:absolute;
-    width: 15% ;
-    border-radius: 100%;
-    box-shadow: 3px 3px 3px grey;
-    left: 1%;
-    top:810px;  
-}
-}
-@media (max-width: 575px) {
-    #fotodeperfil {
-        position: absolute;
-        width: 30% ;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
-        left: 33%;
-        top:630px; 
-}
-}
+
+
+
 h1 {
     display: inline;
     font-family: 'Titillium Web', sans-serif;
     
 }
 
-/** etiqueta Nombre**/
-#nombre {
- font-weight: bold;
- margin-top: 30%;
-
+#boton{
+    position:absolute;
+    left: 80%;
+    
 }
-
 
 @media(max-width: 768px) {
     #fotodeperfil {
@@ -52,4 +33,11 @@ h1 {
         top: 48.5rem;
         right: 2rem;
     }
+}
+.img-perfil{
+    border-radius: 100%;
+    box-shadow: 3px 3px 50px rgb(90, 90, 90);
+    margin-top: -40%;
+    width: 70%;
+    max-width: 200px;
 }

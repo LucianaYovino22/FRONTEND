@@ -1,9 +1,15 @@
 .row {
     background-color: #e7b0ee;
-    padding: 20px;
+    padding: 40px;
 }
+
 h1 {
     display: inline;
     font-family: 'Titillium Web', sans-serif;
-    text-decoration-line: underline;
+   text-decoration-line: underline;
+    
+}
+#barras {
+    display: grid;
+    column-gap: 0cm;
 }

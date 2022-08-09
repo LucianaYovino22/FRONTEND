@@ -1,38 +1,38 @@
 <div class="row">
-    <h2>Hard & Soft Skills</h2>
-    <div class="col-lg-2">
-      <button type="button" class="btn btn-dark"  routerLink="/nuevaskill" *ngIf="isLogged">
-        Nueva Skill
-      </button>
-    </div>
-  
-  
-    <div *ngFor= "let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4">
-      
-      <circle-progress
-        [percent]="skill.descripcionS"
-        [radius]="85"
-        [showUnits]="false"
-        [title]="skill.nombreS"
-        [showSubtitle]="false"
-        [subtitle]="skill.nombreS" 
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-      >
-      </circle-progress>
-  
-      <div *ngIf="isLogged">
-        <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
-        <i class="bi bi-pencil"></i></button>
-        </div>
-      
-      <div *ngIf="isLogged">
-        <button class="btn btn-danger" (click)="delete(skill.id)">
-        <i class="bi bi-trash"></i></button>
-        </div>
-  
-    </div>
+  <h2>Hard & Soft Skills</h2>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark"  routerLink="/nuevaskill" *ngIf="isLogged">
+      Nueva Skill
+    </button>
+  </div>
+
+
+  <div *ngFor= "let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4">
+    
+    <circle-progress
+      [percent]="skill.descripcionS"
+      [radius]="85"
+      [showUnits]="false"
+      [title]="skill.nombreS"
+      [showSubtitle]="false"
+      [subtitle]="skill.nombreS" 
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="5"
+      [outerStrokeColor]="'#1F618D'"
+      [innerStrokeColor]="'#ECF0F1 '"
+      [animation]="true"
+      [animationDuration]="600"
+    >
+    </circle-progress>
+
+    <div *ngIf="isLogged">
+      <button class="btn btn-outline-dark"routerLink="/editskill/{{skill.id}}">
+      <i class="bi bi-pencil"></i></button>
+      </div>
+    
+    <div *ngIf="isLogged">
+      <button class="btn btn-outline-dark" (click)="delete(skill.id)">
+      <i class="bi bi-trash"></i></button>
+      </div>
+
+  </div>

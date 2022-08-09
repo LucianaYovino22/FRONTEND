@@ -2,15 +2,15 @@
 <div class="row">
     <h1>Perfil</h1>
     <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevouser" *ngIf="isLogged">
-            Agregar Usuario
+        <button type="button" id="boton" class="btn btn-dark" routerLink="/nuevouser" *ngIf="isLogged">
+            <i class="bi bi-plus-lg"></i>
         </button>
     </div>
 
     <div class="col lg 1"></div>
     <div class="col-lg-11">
         <table class="table">
-            <img img src={{persona.imgP}} class="img-fluid img-perfil" id="fotodeperfil">
+            <img src={{persona.imgP}} class="img-fluid img-perfil" id="fotodeperfil">
             <tbody>
                 <tr>
                     
