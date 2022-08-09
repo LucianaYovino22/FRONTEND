@@ -3,9 +3,29 @@
 }
 
 footer {
-    color: #4e4040;
+    color: #3f3b3b;
     font-size: 14px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p{
+    margin: 0px;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #3f3b3b;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.bi-envelope{
+    color: #82DBD8;
 }
