@@ -1,5 +1,17 @@
+.container-fluid {
+    background-color: #c4c4c4;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+       
+}
+
 .row {
-    padding: 40px;
+    padding: 20px;
 }
 
 div {
@@ -8,7 +20,10 @@ div {
 }
 /**Estilo de la foto de perfil**/
 
-
+h4{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
 
 h1 {
     display: inline;
@@ -16,20 +31,16 @@ h1 {
     
 }
 
-#boton{
-    position:absolute;
-    left: 80%;
-    
-}
+
 
 @media(max-width: 768px) {
-    #fotodeperfil {
+    .img-perfil {
         margin-top: -20%;
     }
 }
 
 @media(max-width: 576px) {
-    #edit-persona-btn{
+    .edit-persona-btn, .delete-persona-btn {
         top: 48.5rem;
         right: 2rem;
     }

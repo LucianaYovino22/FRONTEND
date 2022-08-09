@@ -6,9 +6,9 @@ div{
 }
 
 h1 {
-    display: inline;
+    
     font-family: 'Titillium Web', sans-serif;
-    text-decoration-line: underline;
+    line-height: 1;
 }
 h2 {
    

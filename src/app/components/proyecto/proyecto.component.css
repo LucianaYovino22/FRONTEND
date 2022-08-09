@@ -1,29 +1,134 @@
-.row {
-    padding: 40px;
-    background-color: #e7b0ee;
+.container-fluid{
+    padding-top: 4rem;
+    background-color: #F2EDDA;
 }
-.contenedor {
-    width: auto;
-}
-.parte1 , .parte2 {
-    display: inline-block;
-    text-align:justify;
-}/*para que ocupe una parte en bloque y no toda la línea*/
 
-.img-proyecto {
-    box-shadow: 10px 10px 5px black;
+.row {
+    padding: 20px;
+    position: relative;
 }
-h1 {
-    display: inline;
-    font-family: 'Titillium Web', sans-serif;
-    text-decoration-line: underline;
+
+
+h1, h2, h4, h5, p{
+    font-family: 'Albert Sans', sans-serif;
 }
-h2 {
-    display: inline;
-    font-family: 'Titillium Web', sans-serif;
+
+h1{
+    color: #3d3d3d
 }
-p{
-   
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+
+h2{
+    letter-spacing: 0.2rem;
+    color: #919191;
+    position: relative;
+    z-index: 1;
+}
+
+h2:before{
+    content: 'PROYECTOS';
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    color: #e7b0ee;
+    font-size: 100px;
+    text-align: center;
+    top: -110%;
+    left: 10%;
+    right: 10%;
+    z-index: -1;
+
+}
+
+
+h6, h3{
+    font-family: 'Source Code Pro', monospace;
+}
+
+h6{
+    color: white;
+    background-color: #3BACB6   
+}
+
+
+.img-proyectos{
+    max-width: 100%;
+    
+}
+
+.edit-button, .delete-button{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgb(128, 128, 128);
+}
+
+.add-button{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgb(128, 128, 128);
+    padding: 5px;
+    align-items: center;
+    margin: 1rem auto;
+
+}
+
+.add-button i{
+    font-size: 25px;
+    text-align: center;
+    line-height: 32px;
+    margin: auto;
+}
+
+tr{
+    border-color: #3BACB6;   
+    border-style: solid;
+    border-width: 0;
+}
+
+.table > :not(caption) > * > * {
+    padding: 2rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+
+.modal-dialog {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media(max-width: 840px){
+    h2:before{
+        font-size: 80px;
+        top: -100%;
+    }
+}
+
+@media(max-width: 660px){
+    h2:before{
+        font-size: 60px;
+        top: -80%;
+    }
+}
+
+
+@media(max-width: 576px){
+    h2:before{
+        font-size: 48px;
+        top: -41%;
+    }
+    td{
+        width: 100%;
+    }
+}
+
+@media(max-width: 430px){
+    h2:before{
+        font-size: 36px;
+    }
+
 }
