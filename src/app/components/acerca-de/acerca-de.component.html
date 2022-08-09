@@ -1,7 +1,7 @@
 <div class="container-fluid" *ngFor="let persona of persona">
     <div class="row">
     <div class="col-lg-12" >
-        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+        <button type="button" class="btn btn-dark add-perfil" routerLink="/nuevaedu" *ngIf="isLogged">
             <i class="bi bi-plus-lg"></i>
         </button>
     </div>
@@ -10,6 +10,8 @@
         <div class="col-md-4 px-5 py-4 text-center">
             <img src={{persona.imgP}} class="img-fluid img-perfil" id="fotodeperfil">     
             <h1 class="fw-bold mt-3" id="nombre">{{persona.nombreP}} {{persona.apellidoP}}</h1>
+            <br>
+            <br>
             <h6>{{persona.tituloP}}</h6>  
         </div>
 
@@ -17,12 +19,11 @@
                 <h3 class="fw-bold">Acerca de mí</h3>
                 <p>{{persona.descP}}</p>   
                 <div class="edit-persona-btn text-end" *ngIf="isLogged"> 
-                        <button id="edit-persona-btn" class="btn btn-outline-dark" routerLink="/edituser/{{persona.id}}">
+                    <button class="btn btn-outline-dark edit-button m-1"  routerLink="/edituser/{{persona.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
-            </div>
-            <div class="delete-persona-btn text-end" *ngIf="isLogged">
-                        <button class="btn btn-outline-dark" (click)="delete(persona.id)">
+                    <button class="btn btn-outline-dark delete-button m-1" (click)="delete(persona.id)">
                             <i class="bi bi-trash-fill"></i> BORRAR</button>
+                </div>
             </div>     
         </div>
     </div>

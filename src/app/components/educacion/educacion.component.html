@@ -1,31 +1,38 @@
-<div class="row">
-        <div class="row">
-            <h2 class="fw-bold text-uppercase mb-4 text-center">Estudios</h2>
-       <div class="col-lg-2">
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-lg-10 offset-lg-1 align-items-center text-center text-md-start">
+        <h2 class="fw-bold text-uppercase mb-4 text-center">Estudios</h2>
+    </div>
+
+    <div class="col-2 text-end">
+        <button id="boton" type="button" class="btn btn-dark add-edu" routerLink="/nuevaexp" *ngIf="isLogged">
             <i class="bi bi-plus-lg"></i>
         </button>
     </div>
 
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Educacion of educacion">
-                    <td>
-                        <h2>{{Educacion.nombreE}}</h2>
-                    </td>
-                    <td>{{Educacion.descripcionE}}</td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-outline-dark" routerLink="/editedu/{{Educacion.id}}">
+    <div class="col-lg-10 offset-lg-1 educacion">
+        <div class="container">
+            <div class="row row-edu"  *ngFor="let Educacion of educacion">
+                <div class="col-md-3 col-sm-12">
+                    <h3>{{Educacion.nombreE}}</h3>
+                </div>
+
+                <div class="col-md-7 col-sm-10">
+                    <p>{{Educacion.descripcionE}}</p>
+                </div>  
+
+                <div class="col-md-2 col-sm-2 text-end" *ngIf="isLogged">                               
+                    
+                        <button class="btn btn-outline-dark edit-button m-1" routerLink="/editexp/{{Educacion.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-outline-dark" (click)="delete(Educacion.id)">
+                    
+                        <button class="btn btn-outline-dark delete-button m-1" (click)="delete(Educacion.id)">
                             <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </div> 
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+     

@@ -20,9 +20,21 @@ div {
 }
 /**Estilo de la foto de perfil**/
 
-h4{
+h6{
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
+}
+
+.add-perfil{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgb(128, 128, 128);
+    position: initial;
+    top: 2rem;
+    right: 3rem;
+    padding: 5px;
+    align-items: center;
 }
 
 h1 {
