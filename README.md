@@ -1,4 +1,4 @@
-# Porfolio Luciana S.Yovino
+# Portfolio Luciana S.Yovino
 ![Portada](https://user-images.githubusercontent.com/96786165/183790485-0be20c17-bc67-44d9-9f0e-10c49742b755.png)
  
 
