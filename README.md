@@ -11,7 +11,7 @@ Correspondiente al programa "Argentina Programa", segunda etapa "Yo Programo".
 
 ## Partes
 
-* Header: Redes sociales y botón de login.
+* Header: Logo, Redes sociales, botón de login.
 * Acerca de mi.
 * Experiencia laboral.
 * Educación.
@@ -19,7 +19,7 @@ Correspondiente al programa "Argentina Programa", segunda etapa "Yo Programo".
 * Proyectos realizados.
 
 ## Estado del proyecto
-Primera versión funcional para ser evaluada - Agosto 2022.
+Primera versión funcionando.
 
 ## Funcionalidades
 
