@@ -32,5 +32,14 @@ h2{
     position: relative;
     font-family: 'Albert Sans', sans-serif;
 }
+h2:before{
+    content: '';
+    position: absolute;
+    border-top: solid #373a3a 2px;
+    height: 1em;
+    top: 50%;
+    left: -15rem;
+    width: 66%;
+}
 
 

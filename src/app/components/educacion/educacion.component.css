@@ -28,9 +28,7 @@ h2:before{
     width: 66%;
 }
 
-.row-edu{
-    border-bottom: solid #3BACB6 2px;   
-}
+
 
 @media(max-width: 1200px){
     h3{       
