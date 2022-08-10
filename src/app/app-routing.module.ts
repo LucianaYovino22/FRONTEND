@@ -10,7 +10,7 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 import { NewskillComponent } from './components/hys/newskill.component';
 import { EditskillComponent } from './components/hys/editskill.component';
-import { NewacercadeComponent } from './components/acerca-de/newacercade.component';
+
 import { EdditacercademiComponent } from './components/acerca-de/edditacercademi.component';
 
 const routes: Routes = [
@@ -24,7 +24,6 @@ const routes: Routes = [
   { path: 'editproy/:id', component: EditproyectoComponent},
   { path: 'nuevaskill', component: NewskillComponent},
   { path: 'editskill/:id', component: EditskillComponent},
-  { path: 'nuevouser', component: NewacercadeComponent},
   { path: 'edituser/:id', component: EdditacercademiComponent}
 ];
 

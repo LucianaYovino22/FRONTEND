@@ -5,7 +5,7 @@
     </div>
 
     <div class="col-2 text-end">
-        <button id="boton" type="button" class="btn btn-dark add-edu" routerLink="/nuevaexp" *ngIf="isLogged">
+        <button id="boton" type="button" class="btn btn-dark add-edu" routerLink="/nuevaedu" *ngIf="isLogged">
             <i class="bi bi-plus-lg"></i>
         </button>
     </div>
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row row-edu"  *ngFor="let Educacion of educacion">
                 <div class="col-md-3 col-sm-12">
-                    <h3>{{Educacion.nombreE}}</h3>
+                    <h5>{{Educacion.nombreE}}</h5>
                 </div>
 
                 <div class="col-md-7 col-sm-10">
@@ -23,7 +23,7 @@
 
                 <div class="col-md-2 col-sm-2 text-end" *ngIf="isLogged">                               
                     
-                        <button class="btn btn-outline-dark edit-button m-1" routerLink="/editexp/{{Educacion.id}}">
+                        <button class="btn btn-outline-dark edit-button m-1" routerLink="/editedu/{{Educacion.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
                     
                         <button class="btn btn-outline-dark delete-button m-1" (click)="delete(Educacion.id)">

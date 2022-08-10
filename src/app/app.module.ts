@@ -26,7 +26,6 @@ import { NewproyectoComponent } from './components/proyecto/newproyecto.componen
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 import { NewskillComponent } from './components/hys/newskill.component';
 import { EditskillComponent } from './components/hys/editskill.component';
-import { NewacercadeComponent } from './components/acerca-de/newacercade.component';
 import { EdditacercademiComponent } from './components/acerca-de/edditacercademi.component';
 
 @NgModule({
@@ -51,7 +50,6 @@ import { EdditacercademiComponent } from './components/acerca-de/edditacercademi
     EditproyectoComponent,
     NewskillComponent,
     EditskillComponent,
-    NewacercadeComponent,
     EdditacercademiComponent
   ],
   imports: [

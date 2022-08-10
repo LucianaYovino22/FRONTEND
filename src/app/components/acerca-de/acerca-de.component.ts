@@ -30,17 +30,7 @@ export class AcercaDeComponent implements OnInit {
     this.personaService.lista().subscribe(data => {this.persona = data;})
     
   }
-  delete(id?: number){
-    if( id != undefined){
-      this.personaService.delete(id).subscribe(
-        data => {
-          this.cargarPersona();
-        }, err => {
-          alert("No se pudo eliminar");
-        }
-      )
-    }
-  }
+  
 
   }
 
