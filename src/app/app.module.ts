@@ -17,7 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { interceptorProvider } from './service/interceptor-service';
+//import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
@@ -61,7 +61,7 @@ import { EdditacercademiComponent } from './components/acerca-de/edditacercademi
     HttpClientModule
   ],
   providers: [
-    interceptorProvider
+    //interceptorProvider
   ],
   bootstrap: [AppComponent]
 })

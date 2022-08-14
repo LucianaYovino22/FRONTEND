@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
 
-    URL =" https://backend-argentinaprograma.herokuapp.com/personas/";
+    URL ="https://backend-argentinaprograma.herokuapp.com/personas/";
     
     constructor(private httpClient: HttpClient) { }
 
