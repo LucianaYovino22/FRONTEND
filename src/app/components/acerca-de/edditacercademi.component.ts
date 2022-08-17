@@ -36,7 +36,7 @@ export class EdditacercademiComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert("Error al editar la educacion");
+        alert("Error al editar el perfil");
         this.router.navigate(['']);
       }
     )

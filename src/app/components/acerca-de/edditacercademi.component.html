@@ -3,8 +3,12 @@
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreE">Nombre del usuario</label>
+                    <label for="nombreE">Nombre</label>
                     <input type="text" class="form-control" id="nombreuser" name="nombreuser" [(ngModel)]="user.nombreP" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombreE">Apellido</label>
+                    <input type="text" class="form-control" id="nombreuser" name="nombreuser" [(ngModel)]="user.apellidoP" required>
                 </div>
                 <div class="form-group">
                     <label for="descripcionE">Título</label>
