@@ -1,3 +1,81 @@
-img {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrp {
     width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    background: url(../../../assets/portadanueva.png) no-repeat 0;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    ;
+}
+.contenido {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0, 11, 0.6);
+}
+
+.contenido .info {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+
+.contenido .info h1 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0px,1px,10px, rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.contenido .info a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px 25px;
+    color: #fff;
+    background: transparent;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border: 2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0.5px;
+}
+
+.contenido .info a:hover {
+    background: transparent;
+    border: 2px solid #fff;
+
+}
+.curveado {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    
+}
+.curveado img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .contenido .info h1 {
+        font-size: 35px;
+    }
 }

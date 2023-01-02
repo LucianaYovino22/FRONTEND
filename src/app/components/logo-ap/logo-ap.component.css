@@ -3,15 +3,14 @@
     justify-content: space-between;
     align-items: center;
 }
-#logoAp {
-    width: 150px;
-}
+
 img{
     width: 50px;
 }
 
 .redes {
-    margin-right: 0.5em;
+    margin-right: 1rem;
+    padding: 10px;
 }
 
 .btn {

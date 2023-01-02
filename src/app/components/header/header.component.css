@@ -1,5 +1,6 @@
 div {
     background-color: #e7b0ee;
+    
 }
 
 app-redessociales{
@@ -8,7 +9,7 @@ app-redessociales{
 }
 
 .navbar {
-    background-color: #e9e7e6;
+    background-color: #e7b0ee;
     display: flex;
    justify-content: space-around
 }
