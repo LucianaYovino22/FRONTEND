@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://backend-production-4d9c.up.railway.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

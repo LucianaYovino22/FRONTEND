@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
 
-    URL ="http://localhost:8080/personas/";
+    URL ="https://backend-production-4d9c.up.railway.app/personas/";
     
     constructor(private httpClient: HttpClient) { }
 

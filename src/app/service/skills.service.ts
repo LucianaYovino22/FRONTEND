@@ -7,7 +7,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SSkillsService {
-    skillURL = 'http://localhost:8080/skills/';
+    skillURL = 'https://backend-production-4d9c.up.railway.app/skills/';
 
   constructor(private httpClient: HttpClient) { }
 
