@@ -1,12 +1,20 @@
-.row {
+.container-fluid{
+    padding-top: 1rem;
     background-color: #e7b0ee;
-    padding: 40px;
 }
 
-h1 {
-    display: inline;
-    font-family: 'Titillium Web', sans-serif;
-   text-decoration-line: underline;
-    
+.row {
+    padding: 20px;
+    position: relative;
 }
 
+
+h2:before{
+    content: '';
+    position: absolute;
+    border-top: solid #373a3a 2px;
+    height: 1em;
+    top: 30%;
+    left: -13rem;
+    width: 66%;
+}
